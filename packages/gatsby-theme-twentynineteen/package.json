@@ -17,13 +17,16 @@
   "dependencies": {
     "@calderajs/forms": "^0.4.0",
     "axios": "^0.18.0",
+    "gatsby-plugin-polyfill-io": "^1.1.0",
     "gatsby-plugin-sass": "^2.0.10",
     "gatsby-source-graphql": "^2.0.11",
+    "intersection-observer": "^0.5.1",
     "moment": "^2.24.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.2",
     "react-helmet": "^5.2.0",
     "react-mailchimp-subscribe": "^2.1.0",
-    "react-oembed-container": "^0.3.0"
+    "react-oembed-container": "^0.3.0",
+    "whatwg-fetch": "^3.0.0"
   }
 }
