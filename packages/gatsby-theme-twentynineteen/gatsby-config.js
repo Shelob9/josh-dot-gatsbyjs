@@ -12,5 +12,11 @@ module.exports = ({ wordPressUrl }) => ({
       },
     },
     `gatsby-plugin-sass`,
+	  {
+		  resolve: `gatsby-plugin-polyfill-io`,
+		  options: {
+			  features: [`Array.prototype.map`, `fetch`, `IntersectionObserver` ]
+		  },
+	  },
   ],
 })
