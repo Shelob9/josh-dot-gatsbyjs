@@ -3,14 +3,22 @@ module.exports = {
     title: `Future Capable`,
     description: `Just Another Headless WordPress Site`,
     author: `@shelob9`,
-    wordPressUrl: `http://live-futurecapable.pantheonsite.io/`
+    wordPressUrl: `https://cms.futurecapable.dev`
   },
   __experimentalThemes: [
     {
       resolve: "gatsby-theme-twentynineteen",
       options: {
-        wordPressUrl: `http://live-futurecapable.pantheonsite.io/`
+        wordPressUrl: `https://cms.futurecapable.dev`
       }
     }
-  ]
+  ],
+	plugins: [
+		{
+			resolve: `gatsby-plugin-polyfill-io`,
+			options: {
+				features: [`fetch`, `IntersectionObserver` ]
+			},
+		},
+	],
 };

@@ -789,17 +789,16 @@
     uuid "^3.3.2"
     yup "^0.26.10"
 
-"@calderajs/components@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@calderajs/components/-/components-0.4.0.tgz#883ef80c7cbe2fb2cd3017a1dab87ffe4df60638"
-  integrity sha512-lfWhDlY2ox0/q3cSRDTBRKNVzkXA0UAh3It/9eBRgrLxIzKzdEDjlAP5RIphYeob2njdb3ncedx/Sl7oGF30PQ==
+"@calderajs/components@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@calderajs/components/-/components-0.5.1.tgz#ec9a6c0c7a443b7207cbd441fd502989084ec094"
+  integrity sha512-jDFJyO+OxofnKHa7jFHw4cYye+4S8Ccs3ku6N0yv3puPQqfp6kmDjb7h3V/2XU4QwgIPpJqjHKxFtFtZdyfw5w==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.0"
     "@rebass/grid" "^6.0.0-7"
-    "@wordpress/components" "^7.0.4"
     "@wordpress/compose" "^3.0.0"
-    "@wordpress/editor" "^9.0.6"
     "@wordpress/element" "^2.1.8"
+    "@wordpress/hooks" "^2.2.0"
     babel-polyfill "^6.26.0"
     classnames "^2.2.6"
     deepmerge "^3.0.0"
@@ -838,22 +837,24 @@
     react-oembed-container "^0.3.0"
     webpack-bundle-size-analyzer "^3.0.0"
 
-"@calderajs/forms@^0.4.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@calderajs/forms/-/forms-0.4.0.tgz#9130f70da4889fec5fccc6ed024e9bd29a5f0814"
-  integrity sha512-4pneSP+D0XN26hEoBr9/BbsdZYWDxQKT2ZlKOeg/dO17Gk0sSdFDP1DqRixac8gxhjqS40e6D7pwFU8ZI1xESw==
+"@calderajs/forms@^0.5.2":
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/@calderajs/forms/-/forms-0.5.2.tgz#c6076cdbbe27d142f52b41a6beceda356b78ec7b"
+  integrity sha512-rXzmGi8FccnayBL6hg4q4JvifIrwebVi7rb5vcl7+AXE9fTfvtAOKp/9wk5CGnaPKvrxiiwQrYl2FByXLzUurg==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.4.0"
     "@babel/plugin-transform-runtime" "^7.4.0"
     "@babel/polyfill" "^7.4.0"
     "@babel/preset-react" "^7.0.0"
-    "@calderajs/components" "^0.4.0"
+    "@calderajs/components" "^0.5.1"
     axios "^0.18.0"
     cross-env "^5.2.0"
+    lodash "^4.17.11"
     prop-types "^15.6.2"
     react-helmet "^5.2.0"
     react-oembed-container "^0.3.0"
     webpack-bundle-size-analyzer "^3.0.0"
+    whatwg-fetch "^3.0.0"
 
 "@emotion/is-prop-valid@^0.7.3":
   version "0.7.3"

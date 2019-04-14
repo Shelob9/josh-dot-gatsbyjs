@@ -1,4 +1,4 @@
-require('intersection-observer');
+
 const createPosts = require(`./utils/createPosts`)
 const createPages = require(`./utils/createPages`)
 const createUsers = require(`./utils/createUsers`)
@@ -11,4 +11,22 @@ exports.createPages = async ({actions, graphql}) => {
 	await createUsers({actions, graphql})
 	await createCategories({actions, graphql})
 	await createTags({actions, graphql})
+}
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+	if (stage === "build-html") {
+		actions.setWebpackConfig({
+			module: {
+				rules: [
+					{
+						test: /quill/,
+						use: loaders.null(),
+					},{
+						test: /whatwg-fetch/,
+						use: loaders.null(),
+					},
+				],
+			},
+		})
+	}
 }
